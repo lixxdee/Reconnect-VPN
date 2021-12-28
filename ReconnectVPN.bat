@@ -5,9 +5,9 @@
        echo TTL dont't found, ping failure - disconnecting...
        rasdial IKEv2 /disconnect
           timeout /t 1 /nobreak
-       echo reconnecting
+       echo Reconnecting...
           rasdial IKEv2
           timeout /t 1 /nobreak
    )
-timeout /t 3 /nobreak
+timeout /t 10 /nobreak
 goto :loop
